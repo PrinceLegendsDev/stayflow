@@ -12,32 +12,7 @@
     .hero {
         min-height: 65vh;
     }
-
-    .hero-images img {
-        object-position: center;
-    }
-
-
-    /* ========================================
-       STICKY BOOKING BUTTON
-    ======================================== */
-
-    .stick-book {
-        bottom: 18px;
-        width: 100%;
-        padding: 0 var(--space-sm);
-    }
-
-    .stick-book a {
-        width: 100%;
-        max-width: none;
-
-        min-height: 50px;
-
-        font-size: var(--font-size-md);
-    }
-
-
+   
     /* ========================================
        WHY STAYFLOW
     ======================================== */

@@ -50,41 +50,20 @@ body {
 }
 
 /* ========================================
-   STICKY BOOKING BUTTON
+    BOOKING BUTTON
 ======================================== */
-
-.stick-book {
-    position: fixed;
-    bottom: 24px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
-}
-
-.stick-book a {
-    display: block;
-    width: min(90vw, 420px);
-    min-height: 52px;
-    padding: 14px 24px;
-
-    font-size: var(--font-size-lg);
-    font-weight: bold;
-    text-align: center;
-
-    border-radius: var(--space-sm);
-
-    background-color: var(--color-text);
+.book-btn {
+    padding: var(--space-xs);
+    background: var(--color-text-light);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
     color: var(--color-secondary);
-
-    transition: background-color 0.3s ease,
-                transform 0.3s ease;
+    margin-top: var(--space-md);
 }
-
-.stick-book a:hover {
-    background-color: var(--color-card);
-    transform: translateY(-2px);
+.book-btn:hover {
+    background: var(--color-card);
+    transition: 0.5s ease-in;
 }
-
 
 /* ========================================
    HOME CONTENT
