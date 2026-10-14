@@ -19,6 +19,9 @@ body {
     justify-content: center;
     align-items: center;
 
+    min-height: 100vh;
+    min-height: 100dvh;
+
     background: 
      linear-gradient(rgba(0, 0, 0, 0.45),
                     rgba(0, 0, 0, 0.45)),
@@ -30,12 +33,14 @@ body {
 }
 .hero h1{
     font-size: var(--font-size-xl);
+}
+.heading {
     color: var(--color-accent);
+    font-size: 3.9rem;
 }
 .hero p{
     text-align: center;
     font-size: var(--font-size-lg);
-    
 }
 /*=======================================
     HERO ANIMATION 
