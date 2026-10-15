@@ -42,6 +42,46 @@ body {
     text-align: center;
     font-size: var(--font-size-lg);
 }
+/*========================================
+    SUB_SECTION 
+========================================*/
+
+.sub-section {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: var(--space-lg);
+}
+.sub-section h1{
+    text-align: center;
+    padding: var(--space-lg);
+    color: var(--color-secondary);
+}
+.card-box  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+.box img {
+    width: 100%;
+    height: 350px;
+    border-radius: var(--radius-lg);
+}
+.box h2,p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*=======================================
     HERO ANIMATION 
 =====================================*/
@@ -69,80 +109,3 @@ body {
     background: var(--color-card);
     transition: 0.5s ease-in;
 }
-
-/* ========================================
-   HOME CONTENT
-======================================== */
-
-.home-cards {
-    padding: var(--space-md) 0;
-}
-
-
-/* ========================================
-   WHY STAYFLOW
-======================================== */
-
-.home-reason {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-md);
-    align-items: center;
-
-    padding: var(--space-md) 0;
-}
-
-.home-reason img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-    border-radius: var(--radius-lg);
-
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
-}
-
-.home-reason img:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
-}
-
-.why-us p {
-    font-size: var(--font-size-xl);
-    line-height: 1.6;
-}
-
-
-/* ========================================
-   CARDS
-======================================== */
-
-.card h2 {
-    text-align: center;
-    font-size: var(--font-size-xl);
-    color: var(--color-accent);
-}
-
-
-/* ========================================
-   HOTEL DETAILS
-======================================== */
-
-.home-details {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-md);
-
-    padding: var(--space-md) 0;
-}
-
-.home-details .card {
-    font-size: var(--font-size-md);
-}
-
-.home-details p {
-    font-size: var(--font-size-lg);
-    line-height: 1.5;
-}
-  
-  

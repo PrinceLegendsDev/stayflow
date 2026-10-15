@@ -18,61 +18,39 @@
     }
    
     /* ========================================
-       WHY STAYFLOW
+       SUB SECTION
     ======================================== */
 
-    .home-cards {
-        padding: var(--space-md) 0;
+    .sub-section {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-lg);
+        background: black;
+        padding: 1rem;
     }
-
-    .home-reason {
-        grid-template-columns: 1fr;
-        gap: var(--space-md);
-
-        padding: var(--space-md) 0;
+    .sub-section h1 {
+        font-size: 1.9rem;
+        padding: var(--space-lg);
+        text-align: center;
+         color: var(--color-secondary);
     }
-
-    .home-reason img {
+    /*==========================================
+         SUB_SECTION CARDS
+    ==========================================*/
+    .card-box  {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-lg);
+    }
+    .box img{
+        width: 100%;
         height: 300px;
+        border-radius: var(--radius-xl);
     }
-
-    .why-us {
+    .box h2,p {
         text-align: center;
     }
-
-    .why-us h2 {
-        font-size: var(--font-size-xl);
-    }
-
-    .why-us p {
-        font-size: var(--font-size-md);
-        line-height: 1.6;
-    }
-
-
-    /* ========================================
-       HOME DETAILS
-    ======================================== */
-
-    .home-details {
-        grid-template-columns: 1fr;
-        gap: var(--space-md);
-
-        padding: var(--space-md) 0;
-    }
-
-    .home-details .card {
-        padding: var(--space-md);
-    }
-
-    .home-details .card h2 {
-        font-size: var(--font-size-xl);
-    }
-
-    .home-details p {
-        font-size: var(--font-size-md);
-    }
-
+    
     /* ========================================
    MOBILE NAVIGATION
 ======================================== */
