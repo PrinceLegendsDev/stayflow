@@ -50,6 +50,15 @@
     .box h2,p {
         text-align: center;
     }
+    /*========================================
+       GALLERY SECTION
+    ========================================*/
+
+   .img-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
     
     /* ========================================
    MOBILE NAVIGATION
