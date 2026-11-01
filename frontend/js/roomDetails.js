@@ -109,13 +109,14 @@ export function readRoom() {
                         Back to Rooms
                     </a>
 
-                    <button
-                        type="button"
-                        class="${room.status === "occupied" ? "occupied" : "available"}"
-                        ${room.status === "occupied" ? "disabled" : ""}
-                    >
-                        Book Room
-                    </button>
+                   <button
+    type="button"
+    class="${room.status === "occupied" ? "occupied" : "available"}"
+    ${room.status === "occupied" ? "disabled" : ""}
+    onclick="bookRoom('${room.name}')"
+>
+    Book Room
+</button>
 
                 </div>
 
@@ -123,4 +124,17 @@ export function readRoom() {
 
         </article>
     `;
+}
+
+
+export function bookRoom(roomName) {
+    const phoneNumber = "260775544529";
+
+    const message =
+        `Hello, I would like to book ${roomName}. Please share its availability and booking details.`;
+
+    const whatsappURL =
+        `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
 }

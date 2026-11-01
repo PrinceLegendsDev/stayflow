@@ -54,7 +54,7 @@
    ABOUT HERO BUTTON
 ======================================== */
 
-.about-intro button {
+.about-intro a {
     width: min(100%, 150px);
 
     padding: var(--space-xs);
@@ -74,7 +74,7 @@
                 transform 0.3s ease;
 }
 
-.about-intro button:hover {
+.about-intro a:hover {
     background: var(--color-card);
     transform: translateY(-2px);
 }
@@ -147,6 +147,10 @@
 .video-section {
     width: min(92%, var(--container-width));
     margin: 0 auto;
+
+    position: relative;
+    overflow: hidden;
+    height: 550px;
 }
 
 .video-section h2 {
@@ -157,11 +161,35 @@
 
 .vid-box {
     width: 100%;
-    height: 370px;
+    
 
     background-color: var(--color-text-light);
 
     border-radius: var(--radius-lg);
+
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.vid-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    animation: cinematicZoom 15s ease-in-out infinite alternate;
+}
+
+@keyframes cinematicZoom {
+
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+
 }
 
 
@@ -274,7 +302,7 @@
     margin-bottom: var(--space-sm);
 }
 
-.cta button {
+.cta a {
     padding: var(--space-xs) var(--space-sm);
 
     font-size: var(--font-size-lg);
@@ -284,12 +312,13 @@
     border-radius: var(--radius-md);
 
     cursor: pointer;
+    background-color: var(--color-secondary);
 
     transition: background-color 0.3s ease,
                 transform 0.3s ease;
 }
 
-.cta button:hover {
+.cta a:hover {
     background-color: var(--color-text-hover);
     transform: translateY(-2px);
 }

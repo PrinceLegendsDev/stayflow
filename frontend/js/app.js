@@ -1,6 +1,7 @@
 import { loadComponent, initNavigation } from "./navigation.js";
 import { renderRooms } from "./renderRooms.js";
 import { readRoom } from "./roomDetails.js";
+import { submitForm } from "./form.js";
 
 async function startApp() {
 
@@ -17,6 +18,7 @@ async function startApp() {
 renderRooms();
 readRoom();
 initNavigation()
+submitForm();
 
 }
 
