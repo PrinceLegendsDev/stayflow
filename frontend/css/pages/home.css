@@ -146,9 +146,9 @@ body {
     object-fit: cover;
     border-radius: var(--space-md);
     cursor: pointer;
+    transition: 1s;
 }
 .img-wrapper img:hover {
-    transition: 1s;
     transform: scale(1.1);
 }
 /* ========================================
@@ -183,7 +183,7 @@ body {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.12);
+        transform: scale(1);
     }
 }
 @keyframes fadeUp {

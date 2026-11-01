@@ -9,9 +9,9 @@ export const rooms = [
         capacity: "5 guests",
 
         images: [
-        "assets/rooms/bed.jpg",
+        "assets/rooms/coolRoom.jpg",
          "assets/rooms/bathroom3.jpg",
-         "assets/rooms/lobby2.jpg",
+         "assets/rooms/tv2.jpg",
         ],
 
         status: "occupied",
@@ -32,8 +32,8 @@ export const rooms = [
         capacity: "2 guests",
 
         images: [
-         "assets/rooms/bed2.jpg",
-         "assets/rooms/stay.jpg",
+         "assets/rooms/niceRoom.jpg",
+         "assets/rooms/bathroom3.jpg",
          "assets/rooms/bar1.jpg",
         ],
 
@@ -56,7 +56,7 @@ export const rooms = [
 
         images: [
          "assets/rooms/inside.jpg",
-         "assets/rooms/kitchen1.jpg",
+         "assets/rooms/shower.jpg",
          "assets/rooms/bathroom2.jpg",
         ],
 
@@ -69,7 +69,56 @@ export const rooms = [
             "Spur Services",
             "Extra Snacks"
         ]
+    },
+    {
+        id: 4,
+        name: "Superior Room",
+        number: 4,
+        description: "Enhanced comfort and furnishings",
+        price: 5000,
+        capacity: "3 guests",
+
+        images: [
+         "assets/rooms/bed.jpg",
+         "assets/rooms/spa.jpg",
+         "assets/rooms/bathroom1.jpg",
+        ],
+
+        status: "available",
+        
+        features: [
+            "DSTV Decoder",
+            "home theatre",
+            "personal bar",
+            "gym carpet",
+            "Extra Snacks"
+        ]
+    },
+    {
+        id: 5,
+        name: "Twin Room",
+        number: 5,
+        description: "Premium accommodation for business travellers",
+        price: 7000,
+        capacity: "2 guests",
+
+        images: [
+         "assets/rooms/bed2.jpg",
+         "assets/rooms/sink.jpg",
+         "assets/rooms/bathroom2.jpg",
+        ],
+
+        status: "available",
+        
+        features: [
+            "DSTV Decoder",
+            "home theatre",
+            "personal bar",
+            "gym carpet",
+            "Extra Snacks"
+        ]
     }
+    
     
 ]
 
