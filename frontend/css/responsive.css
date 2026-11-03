@@ -50,6 +50,18 @@
     .box h2,p {
         text-align: center;
     }
+    /*=======================================
+         GALLERY SECTION 
+    ======================================*/
+    .gallery-container {
+        display: flex;
+        gap: var(--space-sm);
+        width: max-content;
+        animation: slideImages 20s linear infinite;
+    }
+    .gallery-card h3 {
+        font-size: var(--font-size-lg);
+    }
     /*========================================
        GALLERY SECTION
     ========================================*/
@@ -720,5 +732,18 @@
 @media (max-width: 600px) {
     .room-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+
+/*============================================
+   MOBILE ANIMATIONS
+===========================================*/
+@keyframes slideImages {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
     }
 }
